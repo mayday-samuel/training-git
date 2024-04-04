@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         System.out.println("Hello and welcome!");
         DBConnection db = new DBConnection();
-        Connection con = db.connection("Animals","postgres","D@iDeneg1");
+        Connection con = db.connection("Animals","postgres","password");
         System.out.println("");
 
         //db.addInf(con,"owners");

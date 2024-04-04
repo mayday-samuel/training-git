@@ -12,8 +12,7 @@ public class DBConnection {
             if(con!=null){
                 System.out.println("Подключился к БД");
             }else{
-
-                System.out.println("мне 24 года нашей дружбы куда деть? просто сказать, ИДИ НАХ*Й?");
+                System.out.println("Не подключился");
             }
         }catch(Exception ex){
             System.out.println(ex);
