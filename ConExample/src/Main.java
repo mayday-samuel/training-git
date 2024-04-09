@@ -1,17 +1,14 @@
-import java.sql.Connection;
-import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args){
         System.out.println("Hello and welcome!");
-        DBConnection db = new DBConnection();
-        Connection con = db.connection("Animals","postgres","password");
-        System.out.println("");
+        DAOTryRealization db = new DAOTryRealization();
+        //db.addInf("owners");
+        //db.upd("owners");
+        //db.del("owners");
+        db.output("owners");
+        //db.output("owners",4);
 
-        //db.addInf(con,"owners");
-        //db.upd(con,"owners");
-        //db.del(con,"owners");
-        db.output(con,"owners");
-        con.close();
+
     }
 }
