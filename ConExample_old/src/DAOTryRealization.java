@@ -52,7 +52,6 @@ public class DAOTryRealization {
     }
 
     public void addInf(String tableName){
-
         try{
             String insert = String.format("INSERT INTO "+tableName+" (name, contact_information)\n" +
                     "VALUES ('Ice Tea', 375297450342)");
