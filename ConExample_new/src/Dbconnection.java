@@ -7,8 +7,8 @@ public class Dbconnection extends DAORealize {
        //connectCheck();
 
         String sql = String.format("SELECT * FROM %s",tableName);
-        Statement ps = getStatement();
-        try{
+
+        try(Statement ps = getStatement()){
             ResultSet res = ps.executeQuery(sql);
             while(res.next()){
                 System.out.print(res.getInt("id") + " ");
@@ -17,8 +17,6 @@ public class Dbconnection extends DAORealize {
             }
         }catch(Exception ex){
             System.out.println(ex);
-        }finally {
-            closeStatement(ps);
         }
     }
 

@@ -16,7 +16,7 @@ public abstract class DAORealize {
     }
 
 //    public void connectCheck(){
-//        if(connection != null){
+//      2  if(connection != null){
 //            System.out.println("подключился");
 //        }else System.out.println("не подключился");
 //    }
